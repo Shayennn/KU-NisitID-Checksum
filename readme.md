@@ -13,9 +13,9 @@
 ทั้ง ~~GetNisitIDChecksum(param1)~~ และ ~~VerifyNisitID(param1)~~ รับค่า ~~param1~~ ได้ทั้ง ~~int~~ และ ~~string~~ โดย
 
 * GetNisitIDChecksum
-    * return ค่าเป็น int
+  * return ค่าเป็น int
 * VerifyNisitID
-    * return ค่าเป็น boolean
+  * return ค่าเป็น boolean
 
 ### Python
 
