@@ -10,22 +10,22 @@
 
 ## วิธีใช้
 
-ดูใน directory example หรือข้างล่าง
+ทั้ง ~~GetNisitIDChecksum(param1)~~ และ ~~VerifyNisitID(param1)~~ รับค่า ~~param1~~ ได้ทั้ง ~~int~~ และ ~~string~~ โดย
+
+* GetNisitIDChecksum
+    * return ค่าเป็น int
+* VerifyNisitID
+    * return ค่าเป็น boolean
 
 ### Python
 
 ```python
 import KUChecksum
-checksum1   = KUChecksum.GetNisitIDChecksum('611050337')
-#>1
-checksum2   = KUChecksum.GetNisitIDChecksum('6110503371')
-#>1
-checksum3   = KUChecksum.GetNisitIDChecksum(611050337)
-#>1
-is_valid1    = KUChecksum.VerifyNisitID(6110503371)
-#>True
-is_valid2    = KUChecksum.VerifyNisitID(6110503372)
-#>False
+checksum1   = KUChecksum.GetNisitIDChecksum('611050337') '''> 1 <'''
+checksum2   = KUChecksum.GetNisitIDChecksum('6110503371') '''> 1 <'''
+checksum3   = KUChecksum.GetNisitIDChecksum(611050337) '''> 1 <'''
+is_valid1   = KUChecksum.VerifyNisitID(6110503371) '''> True <'''
+is_valid2   = KUChecksum.VerifyNisitID(6110503372) '''> False <'''
 ```
 
 ### Javascript
@@ -34,8 +34,8 @@ is_valid2    = KUChecksum.VerifyNisitID(6110503372)
 var checksum1   = GetNisitIDChecksum('611050337');//1
 var checksum2   = GetNisitIDChecksum('6110503371');//1
 var checksum3   = GetNisitIDChecksum(611050337);//1
-var is_valid1    = VerifyNisitID(6110503371);//True
-var is_valid2    = VerifyNisitID(6110503372);//False
+var is_valid1   = VerifyNisitID(6110503371);//True
+var is_valid2   = VerifyNisitID(6110503372);//False
 ```
 
 ทั้งนี้อย่าลืมเรียกใช้ไฟล์ ku-checksum.js ก่อน
@@ -44,9 +44,9 @@ var is_valid2    = VerifyNisitID(6110503372);//False
 
 ```php
 require_once('ku-checksum.php');
-checksum1   = GetNisitIDChecksum('611050337');//1
-checksum2   = GetNisitIDChecksum('6110503371');//1
-checksum3   = GetNisitIDChecksum(611050337);//1
-is_valid1    = KUChecksum.VerifyNisitID(6110503371);//True
-is_valid2    = KUChecksum.VerifyNisitID(6110503372);//False
+$checksum1   = GetNisitIDChecksum('611050337');//1
+$checksum2   = GetNisitIDChecksum('6110503371');//1
+$checksum3   = GetNisitIDChecksum(611050337);//1
+$is_valid1   = VerifyNisitID(6110503371);//True
+$is_valid2   = VerifyNisitID(6110503372);//False
 ```
